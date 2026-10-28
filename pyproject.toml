@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akung941-kvcache_jd455"
+version = "0.1.0"
+description = "对内容做归一化与分片比对，找出KV Cache 与显存优化工程师·越狱模板的变体识别上的重复项并按相似度归并"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "akung941" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://akung941.github.io"
+Repository = "https://github.com/akung941/kvcache_jd455"
+Issues = "https://github.com/akung941/kvcache_jd455/issues"
+
+[project.scripts]
+kvcache_jd455 = "kvcache_jd455:main"
+
+[tool.setuptools]
+py-modules = ["kvcache_jd455"]
